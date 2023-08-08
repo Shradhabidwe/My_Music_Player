@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="music, music web, simple web,html,css">
+    <meta name="author" content="Shradha Bidwe">
+    <title>My Music Player</title>
+
+
+
+
+
+
+
+    <!-- Place your stylesheet here-->
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <!-- font awasome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="bg"></div>
+    <div class=" bg bg2"></div>
+    <div class=" bg bg3"></div>
+
+
+
+
+    <nav class="navbar">
+
+        <div class="navtitle">
+            <!-- logo & name -->
+            <div class="weblogo">
+                <img src="1.jpg" alt="">
+            </div>
+            <div class="webname">
+                <h2>MY</h2>
+                <h6>Music Player</h6>
+            </div>
+        </div>
+        <!-- favorite -->
+        <div class="favorite">
+            <h4>Favourites</h4>
+        </div>
+
+        <!-- searchbar -->
+        <div class="searchbar">
+            <div class="searchicon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <div class="searchmic">
+                <i class="fas fa-microphone mic-ico"></i>
+            </div>
+        </div>
+
+        <!--bell  -->
+        <div class="bell">
+            <img src="bell.png" alt="">
+            Notifications
+        </div>
+
+        <!-- profile -->
+        <div class="profile">
+            <img src="profile.jpeg" alt="">
+        </div>
+
+
+    </nav>
+    <!-- main -->
+
+    <main>
+        <!-- left asider -->
+        <aside class=" one first-asider">
+            <!-- outer top img -->
+            <div class="left-top">
+                <div class="top-img">
+                    <img src="2.jpg" alt="">
+                    <img src="3.jpg" alt="">
+                    <img src="4.jpg" alt="">
+                </div>
+            </div>
+
+
+            <!-- latest relese-->
+
+            <div class="latest" style="margin-top: 12px;">
+                <h1 style=" margin-bottom: 12px;">Latest Release </h1>
+                <div class="latest-content">
+                    <!-- card -->
+                    <div class="card">
+                        <div>
+                            <img src="./photo/tere sang yara.jpg" alt="">
+                            <div class="play-button">
+                                <i class="fa-light fa-play" style="width: 45%; height: 45%; display: inline-block;"></i>
+                            </div>
+                        </div>
+
+                        <div class="song">
+                            <h3>TERE SANG YAARA</h3>
+                            <P>6 JUL 2020</P>
+                        </div>
+
+                        <div class="options">
+                            <label for="latest-relased-checkbox">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </label>
+                            <!-- <input type="checkbox" id="latest-relesed-checkbox">
+                            <div class="latest-dropdown"></div> -->
+                            <p>4.58</p>
+                        </div>
+                    </div>
+
+                    <!-- card2 -->
+                    <div class="card">
+                        <div>
+                            <img src="./photo/l1.jpg" alt="">
+                            <div class="play-button">
+                                <i class="fa-light fa-play" style="width: 45%; height: 45%; display: inline-block;"></i>
+                            </div>
+                        </div>
+
+                        <div class="song">
+                            <h3>DANCE BHOOT</h3>
+                            <P>8 MAY 2021</P>
+                        </div>
+
+                        <div class="options">
+                            <label for="latest-relased-checkbox">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </label>
+                            <!-- <input type="checkbox" id="latest-relesed-checkbox">
+                            <div class="latest-dropdown"></div> -->
+                            <p>3.52</p>
+                        </div>
+                    </div>
+
+                    <!-- card3 -->
+                    <div class="card">
+                        <div>
+                            <img src="./photo/l2.jpg" alt="">
+                            <div class="play-button">
+                                <i class="fa-light fa-play" style="width: 45%; height: 45%; display: inline-block;"></i>
+                            </div>
+                        </div>
+
+                        <div class="song">
+                            <h3>PATHAN</h3>
+                            <P>9 JUN 2023</P>
+                        </div>
+
+                        <div class="options">
+                            <label for="latest-relased-checkbox">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </label>
+                            <!-- <input type="checkbox" id="latest-relesed-checkbox">
+                            <div class="latest-dropdown"></div> -->
+                            <p>5.58</p>
+                        </div>
+                    </div>
+                    <!-- card4 -->
+                    <div class="card">
+                        <div>
+                            <img src="./photo/l3.jpeg" alt="">
+                            <div class="play-button">
+                                <i class="fa-light fa-play" style="width: 45%; height: 45%; display: inline-block;"></i>
+                            </div>
+                        </div>
+
+                        <div class="song">
+                            <h3>TERE PYAR MAIN</h3>
+                            <P>23 JUL 2023</P>
+                        </div>
+
+                        <div class="options">
+                            <label for="latest-relased-checkbox">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </label>
+                            <!-- <input type="checkbox" id="latest-relesed-checkbox">
+                            <div class="latest-dropdown"></div> -->
+                            <p>4.58</p>
+                        </div>
+                    </div>
+                    <!--  -->
+
+                </div>
+
+            </div>
+
+
+            <!-- popular artis -->
+            <div class="artists">
+                <h1 style="margin-bottom: 12px;">Popular Artists</h1>
+                <div class="artist-content">
+                    <a href="./song">
+                        <div>
+                            <img src="./photo/arijit.jpeg" alt="">
+                            <div>
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <p style="color: white;">ARJIT SINGH</p>
+                        </div>
+                    </a>
+                    <!-- 2 -->
+                    <a href="./song">
+                        <div>
+                            <img src="./photo/a2.jpg" alt="">
+                            <div>
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <p style="color: white;">ARMAN MALIK</p>
+                        </div>
+                    </a>
+                    <!-- 3 -->
+                    <a href="./song">
+                        <div>
+                            <img src="./photo/a3.jpeg" alt="">
+                            <div>
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <p style="color: white;">A R RAVMAN</p>
+                        </div>
+                    </a>
+                    <!-- 4 -->
+                    <a href="./song">
+                        <div>
+                            <img src="./photo/a4.jpeg" alt="">
+                            <div>
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <p style="color: white;">SONU NIGAM</p>
+                        </div>
+                    </a>
+                    <!-- 5 -->
+                    <a href="./song">
+                        <div>
+                            <img src="./photo/a5.jpeg" alt="">
+                            <div>
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <p style="color: white;">SHREYA GHOSHAL</p>
+                        </div>
+                    </a>
+                    <!-- 6 -->
+                    <a href="./song">
+                        <div>
+                            <img src="./photo/a6.jpeg" alt="">
+                            <div>
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <p style="color: white;">DARSHAN RAWAL</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+
+            <!--punjabi section  -->
+            <div class="lan">
+                <h1 style="margin-bottom: 12px;">LATEST PUNJABI</h1>
+                <div class="lancontain">
+                    <div>
+                        <img src="./photo/p1.jpg" alt="">
+                        <p>3 PEG</p>
+                        <P>2019</P>
+                    </div>
+                    <!-- 2 -->
+                    <div>
+                        <img src="./photo/p2.jpg" alt="">
+                        <p>TERI GATTI</p>
+                        <P>2022</P>
+                    </div>
+                    <!-- 3 -->
+                    <div>
+                        <img src="./photo/p3.jpeg" alt="">
+                        <p>PEG UTTE PEG</p>
+                        <P>2018</P>
+                    </div>
+                    <!-- 4 -->
+                    <div>
+                        <img src="./photo/p4.jpeg" alt="">
+                        <p>TU AAJA NA</p>
+                        <P>2015</P>
+                    </div>
+                    <!-- 5
+                                 -->
+                    <div>
+                        <img src="./photo/p5.jpeg" alt="">
+                        <p>ZAROORI</p>
+                        <P>2019</P>
+                    </div>
+                    <!-- 6 -->
+                    <div>
+                        <img src="./photo/p6.jpeg" alt="">
+                        <p>PHUTE KAM</p>
+                        <P>2020</P>
+                    </div>
+                </div>
+            </div>
+
+            <!-- hindi  section-->
+            <div class="lan">
+                <h1 style="margin-bottom: 12px;">LATEST HINDI</h1>
+                <div class="lancontain">
+                    <div>
+                        <img src="./photo/h1.jpg" alt="">
+                        <p>JINDAGI AB TUM HI HO</p>
+                        <P>2019</P>
+                    </div>
+                    <!-- 2 -->
+                    <div>
+                        <img src="./photo/h2.jpeg" alt="">
+                        <p>TU SAFAR MERA</p>
+                        <P>2020</P>
+                    </div>
+                    <!-- 3 -->
+                    <div>
+                        <img src="./photo/h3.jpeg" alt="">
+                        <p>MERI AASHIQUI</p>
+                        <P>2022</P>
+                    </div>
+                    <!-- 4 -->
+                    <div>
+                        <img src="./photo/h4.jpeg" alt="">
+                        <p>MAIN TUMHARA</p>
+                        <P>2020</P>
+                    </div>
+                    <!-- 5
+                                 -->
+                    <div>
+                        <img src="./photo/h5.jpeg" alt="">
+                        <p>BARISH</p>
+                        <P>2021</P>
+                    </div>
+                    <!-- 6 -->
+                    <div>
+                        <img src="./photo/h6.jpeg" alt="">
+                        <p>BHULA DENA</p>
+                        <P>2023</P>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- english -->
+            <div class="lan">
+                <h1 style="margin-bottom: 12px;">LATEST ENGLISH</h1>
+                <div class="lancontain">
+                    <div>
+                        <img src="./photo/e1.jpg" alt="">
+                        <p>DESPACTIO</p>
+                        <P>2019</P>
+                    </div>
+                    <!-- 2 -->
+                    <div>
+                        <img src="./photo/e2.jpeg" alt="">
+                        <p>THE BOYS</p>
+                        <P>2017</P>
+                    </div>
+                    <!-- 3 -->
+                    <div>
+                        <img src="./photo/e8.jpg" alt="">
+                        <p>BAD BOY</p>
+                        <P>2022</P>
+                    </div>
+                    <!-- 4 -->
+                    <div>
+                        <img src="./photo/e11.jpeg" alt="">
+                        <p>SHE WANTS IT</p>
+                        <P>2018</P>
+                    </div>
+                    <!-- 5
+                                 -->
+                    <div>
+                        <img src="./photo/e9.jpg" alt="">
+                        <p>2EASY</p>
+                        <P>2021</P>
+                    </div>
+                    <!-- 6 -->
+                    <div>
+                        <img src="./photo/e10.jpg" alt="">
+                        <p>TAKE ME DOWN</p>
+                        <P>2019</P>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- mash up section -->
+            <div class="lan">
+                <h1 style="margin-bottom: 12px;">MASH-UPS</h1>
+                <div class="lancontain">
+                    <div>
+                        <img src="./photo/m1.jpg" alt="">
+                        <p> LOVE MASHUP</p>
+                        <P>2017</P>
+                    </div>
+                    <!-- 2 -->
+                    <div>
+                        <img src="./photo/m2.jpg" alt="">
+                        <p> ROMANTIC MASHUP</p>
+                        <P>2020</P>
+                    </div>
+                    <!-- 3 -->
+                    <div>
+                        <img src="./photo/m3.jpeg" alt="">
+                        <p> NEW YEAR MASHUP</p>
+                        <P>2019</P>
+                    </div>
+                    <!-- 4 -->
+                    <div>
+                        <img src="./photo/M4.jpeg" alt="">
+                        <p> VALENTINE MASHUP</p>
+                        <P>2018</P>
+                    </div>
+                    <!-- 5
+                                 -->
+                    <div>
+                        <img src="./photo/M5.jpeg" alt="">
+                        <p> PARTY MASHUP</p>
+                        <P>2014</P>
+                    </div>
+                    <!-- 6 -->
+                    <div>
+                        <img src="./photo/M6.jpeg" alt="">
+                        <p> SHERSHAAH MASHUP</p>
+                        <P>2021</P>
+                    </div>
+                </div>
+            </div>
+
+            <!-- end of asider -->
+        </aside>
+
+
+        <!--  right side second side -->
+
+        <!-- <label for="plist">
+            <input type="checkbox">
+        </label> -->
+
+        <!-- second aside -->
+        <aside class=" one second-aside">
+            <div class="head">
+                <h1>Playlist</h1>
+                <h4>
+                    <a href=""> Playlist
+                        <i class="fa-solid fa-circle-down"></i>
+                    </a>
+                </h4>
+            </div>
+
+
+            <div class="queopt">
+                <p>
+                    <a href="">Open Now</a>
+                </p>
+                <hr>
+                <p>
+                    <a href="#">Close</a>
+                </p>
+            </div>
+
+            <div class="plistcon">
+                <div class="pitem">
+                    <div class="lcon">
+
+                        <div style="margin-right: 4px;">01</div>
+                        <div class="cover">
+                            <img src="./photo/h1.jpg" alt="">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <h3>ROOLING IN DEEP</h3>
+                            </div>
+                            <p>Adele</p>
+                        </div>
+                    </div>
+
+
+                    <div class="rcon">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="pitem">
+                    <div class="lcon">
+
+                        <div style="margin-right: 4px;">02</div>
+                        <div class="cover">
+                            <img src="./photo/h6.jpeg" alt="">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <h3>ROOLING IN DEEP</h3>
+                            </div>
+                            <p>Adele</p>
+                        </div>
+                    </div>
+
+
+                    <div class="rcon">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="pitem">
+                    <div class="lcon">
+
+                        <div style="margin-right: 4px;">03</div>
+                        <div class="cover">
+                            <img src="./photo/h3.jpeg" alt="">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <h3>ROOLING IN DEEP</h3>
+                            </div>
+                            <p>Adele</p>
+                        </div>
+                    </div>
+
+
+                    <div class="rcon">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <!--  -->
+                <div class="pitem">
+                    <div class="lcon">
+
+                        <div style="margin-right: 4px;">04</div>
+                        <div class="cover">
+                            <img src="./photo/l3.jpeg" alt="">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <h3>ROOLING IN DEEP</h3>
+                            </div>
+                            <p>Adele</p>
+                        </div>
+                    </div>
+
+
+                    <div class="rcon">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="pitem">
+                    <div class="lcon">
+
+                        <div style="margin-right: 4px;">05
+                        </div>
+                        <div class="cover">
+                            <img src="./photo/l4.jpeg" alt="">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <h3>ROOLING IN DEEP</h3>
+                            </div>
+                            <p>Adele</p>
+                        </div>
+                    </div>
+
+
+                    <div class="rcon">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="pitem">
+                    <div class="lcon">
+
+                        <div style="margin-right: 4px;">06</div>
+                        <div class="cover">
+                            <img src="./photo/h3.jpeg" alt="">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <h3>ROOLING IN DEEP</h3>
+                            </div>
+                            <p>Adele</p>
+                        </div>
+                    </div>
+
+
+                    <div class="rcon">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <!-- 7 -->
+                <div class="pitem">
+                    <div class="lcon">
+
+                        <div style="margin-right: 4px;">07</div>
+                        <div class="cover">
+                            <img src="./photo/h5.jpeg" alt="">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <h3>ROOLING IN DEEP</h3>
+                            </div>
+                            <p>Adele</p>
+                        </div>
+                    </div>
+
+
+                    <div class="rcon">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <!-- 8-->
+                <div class="pitem">
+                    <div class="lcon">
+
+                        <div style="margin-right: 4px;">08</div>
+                        <div class="cover">
+                            <img src="./photo/h6.jpeg" alt="">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <h3>ROOLING IN DEEP</h3>
+                            </div>
+                            <p>Adele</p>
+                        </div>
+                    </div>
+
+
+                    <div class="rcon">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <!-- 9 -->
+                <div class="pitem">
+                    <div class="lcon">
+
+                        <div style="margin-right: 4px;">09</div>
+                        <div class="cover">
+                            <img src="./photo/p2.jpg" alt="">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <h3>ROOLING IN DEEP</h3>
+                            </div>
+                            <p>Adele</p>
+                        </div>
+                    </div>
+
+
+                    <div class="rcon">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <!-- 10 -->
+                <div class="pitem">
+                    <div class="lcon">
+
+                        <div style="margin-right: 4px;">10</div>
+                        <div class="cover">
+                            <img src="./photo/p3.jpeg" alt="">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <h3>ROOLING IN DEEP</h3>
+                            </div>
+                            <p>Adele</p>
+                        </div>
+                    </div>
+
+
+                    <div class="rcon">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <!--  -->
+            </div>
+        </aside>
+
+    </main>
+
+
+    <!-- footer -->
+    <footer>
+        <!-- active song -->
+        <div class="activesong">
+            <div class="simg">
+                <img src="./photo/tere sang yara.jpg" alt="">
+            </div>
+            <div class="sdesc">
+                <div style="font-size: 14px;">TERE SANG YAARA</div>
+                <div style="font-size: 12px;">ANKIT TIWARI</div>
+            </div>
+
+            <div class="sicon">
+                <span>
+                    <i class="far fa-heart"></i>
+                </span>
+                <span class="fas fa-ban"></span>
+            </div>
+            <div class="sgif">
+                <img src="./photo/g1.gif" alt="">
+            </div>
+        </div>
+        <!-- player -->
+        <div class="player">
+            <audio controls>
+                <source src="./song/10 Tere Sang Yaara (Reprise) Rustom (Arko) 190Kbps.mp3">
+            </audio>
+        </div>
+
+        <!-- exit -->
+        <div class="ext">
+            <div>
+                <i class="fas fa-list-ul"></i>
+            </div>
+            <div>
+                <i class="fa fa-eject"></i>
+            </div>
+            <div>
+                <i class="fa fa-music"></i>
+            </div>
+            <div>
+                <i class="fas fa-random"></i>
+            </div>
+            <div>
+                <i class="fas fa-redo"></i>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+
+</body>
+
+</html>

@@ -1,0 +1,892 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Lugrasimo&family=Nunito+Sans:wght@300&family=Poppins:ital,wght@0,300;1,400;1,700&family=Roboto:ital,wght@0,100;1,300&family=Ubuntu&family=Varela&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', serif;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0px;
+}
+
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+p {
+    font-size: 0.7em;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+h3 {
+    display: block;
+    font-size: 0.87em;
+    font-weight: bold;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+}
+
+.bg {
+
+    animation: movingdiv 2s ease-in-out infinite alternate;
+    animation-delay: 0s;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-timeline: auto;
+
+
+    background-image: linear-gradient(60deg, #F11A7B 50%, #FE0000 50%);
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: -50%;
+
+    opacity: .3;
+    right: -50%;
+    z-index: -1;
+
+}
+
+/*  background animation*/
+@keyframes movingdiv {
+    0% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(25%);
+    }
+}
+
+
+/* bell */
+@keyframes movingbell {
+    0% {
+        transform: rotate(-15deg);
+    }
+
+    50% {
+        transform: rotate(15deg);
+    }
+
+    100% {
+        transform: rotate(-15deg);
+    }
+
+}
+
+.bg2 {
+    animation-direction: alternate-reverse;
+    animation-duration: 3s;
+}
+
+.bg3 {
+    animation-duration: 4s;
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        font-size: smaller;
+    }
+}
+
+
+@media screen and (max-width: 550px){
+.weblogo img {
+    height: 30px;
+    width: 30px;
+}
+}
+
+
+
+@media screen and (max-width:500px) {
+    body {
+        font-size: x-small;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .first-asider {
+        width: 100%;
+    }
+}
+
+/* navbar */
+.navbar {
+    height: 65px;
+    width: 100%;
+    color: white;
+    background-image: linear-gradient(60deg, #F11A7B 30%, #FE0000 50%, #e66485 20%);
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(250, 250, 250, 1) 0px 1px 4px;
+    padding: 0 20px;
+    /* background-color:  rgb(8, 8, 30); */
+}
+
+.navbar div {
+    display: inline-block;
+}
+
+.navtitle div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.weblogo {
+    height: 30px;
+    width: 30px;
+
+}
+
+.weblogo img {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    animation-name: moveinout;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes moveinout{
+60%{
+    transform: scale(1.07);
+}
+100%{
+    transform: scale(1);
+}
+}
+
+.webname h2 {
+    display: block;
+    font-size: 1.5rem;
+    color: rgb(68, 5, 5);
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.webname h6 {
+    display: block;
+    font-size: 0.67rem;
+    color: rgb(220, 239, 231);
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.favorite{
+    animation-name: inout;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes inout{
+   0%{
+    transform: rotate(0deg);
+   } 
+   50%{
+    transform:rotateY(360deg)
+   }
+   70%{
+    transform:scale(1.1)ww
+    
+   }
+   100%{
+    transform: scale(1);
+   }
+}
+
+.searchbar {
+    width: 30%;
+    position: relative;
+
+}
+
+.searchicon {
+    position: absolute;
+    display: inline-block;
+    transition: all ease-in-out0.15s;
+    top: 20%;
+    left: 5%;
+
+
+}
+
+.searchmic {
+    position: absolute;
+    display: inline-block;
+    /* transition: all ease-in-out0.15s; */
+    top: 20%;
+    right: 5%;
+
+}
+
+.searchbar i {
+    color: gray;
+}
+
+.searchbar input {
+    font-weight: 500;
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+
+.bell img {
+    width: 20px;
+    height: 20px;
+    animation-name: movingbell;
+    animation-duration: 0.4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+
+}
+
+
+
+.profile img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid black;
+
+}
+
+
+
+/* body */
+body {
+    /* background-color:white; */
+    margin: 0;
+    display: block;
+    color: white;
+
+}
+
+
+
+
+
+main {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0% 4%;
+    transition: all 1s ease-in-out 0s;
+}
+
+.first-asider {
+    /* display: inline-block; */
+    /* width: 70%; */
+    height: 80vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+}
+
+.first-asider {
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* Internet Explorer and Microsoft Edge */
+}
+
+.first-asider::-webkit-scrollbar {
+    width: 0px;
+    /* Safari and Chrome */
+    height: 0px;
+    display: none;
+}
+
+
+.left-top {
+    position: relative;
+    /* left: 10vw; */
+    margin-top: 30px;
+    /* transition: all 2s ease-in-out 1s; */
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+}
+
+.top-img {
+    position: absolute;
+    left: 5%;
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    overflow: visible;
+
+
+}
+
+
+.top-img img {
+    height: 200px;
+    width: 200px;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    transition: transform 0.1s ease-out 0s;
+}
+
+.top-img img:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 0px 10px 5px rgba(20, 113, 184, 0.5);
+
+}
+
+
+
+
+/* latest relase */
+.latest {
+    position: relative; 
+     top: 20vw;
+    width: 95%;
+    margin-top: 20px;
+    /* height: auto; */
+    box-sizing: border-box;
+}
+
+.latest h1 {
+    /* display: block; */
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #9264e6;
+}
+
+
+.latest-content {
+    display: flex;
+    
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.latest-content div {
+    height: 100px;
+    width: 45%;
+    margin: 5px 0px;
+}
+
+/* card */
+.card {
+    display: flex;
+   
+    transition: box-shadow 1s ease-in-out 0s;
+    /* background-color: #fff; */
+    /* border: 1px solid #ccc; */
+    border-radius: 4px;
+    margin: 5px;
+    overflow: hidden;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 2px 1px white;
+}
+
+.card-image {
+    position: relative;
+}
+
+.card img {
+
+    
+    height: 100px;
+    width: 100px;
+}
+
+.play-button {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: -100%;
+    color: rgb(12, 11, 11, 0);
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 0px;
+    text-align: center;
+    transition: all 1s ease-in 1s;
+
+}
+
+/* song */
+.song {
+    margin: auto 10%;
+    flex-grow: 1;
+    padding: 10px;
+}
+
+
+
+
+/* options */
+
+.options {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+    text-align: right;
+    margin-left: auto;
+    margin-right: 2%;
+    margin-top: 2%;
+}
+
+.label {
+    cursor: default;
+}
+
+
+
+.options p {
+    font-size: 0.7em;
+}
+
+
+
+
+
+/*  popular artist */
+.artists {
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: 25vw;
+    box-sizing: border-box;
+}
+
+.artists>div {
+    text-align: center;
+    margin: 5px;
+}
+
+.artist-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.artist-content>a>div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.artist-content a div img {
+    width: 10vw;
+    min-width: 60px;
+    min-height: 60px;
+    height: 10vw;
+    border-radius: 50%;
+}
+
+
+.artist-content>a>div>div {
+    position: absolute;
+    display: flex;
+    top: 0px;
+    height: 10vw;
+    width: 10vw;
+    min-width: 60px;
+    min-height: 60px;
+    border-radius: 50%;
+    opacity: 0;
+    background-color: rgb(0, 0, 0);
+    transition: opacity 0.1s ease-in-out 0s;
+}
+
+.artist-content>a>div>div:hover {
+    opacity: 0.5;
+
+}
+
+.artist-content>a>div>div i {
+    margin: auto;
+    font-size: 5vw;
+    opacity: 0;
+    /* color: white; */
+    transition: opacity 0.2s ease-in-out 0s;
+}
+
+.artist-content>a>div>div:hover i {
+    opacity: 1;
+}
+
+
+
+/* panjabi song */
+.lan{
+    position: relative;
+    top: 30vw;
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 3vw 0px;
+}
+.lancontain{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    padding: 0px 2px;
+
+}
+.lancontain div{
+    margin: 2vw 0px;
+    width: 10vw;
+    min-width: 60px;
+}
+.lancontain div img{
+    width: 10vw;
+    height: 10vw;
+    min-height: 60px;
+    min-width: 60px;
+    transition: box-shadow 0.1s ease-in-out 0s;
+}
+.lancontain div p:nthchild(2n){
+    width: 100%;
+    word-wrap: break-word;
+}
+.lancontain div p:nthchild(2n+1){
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+.lancontain div img:hover{
+   box-shadow: 0px 0px 10px 3px rgb(231, 222, 222); 
+}
+
+
+
+
+
+
+/*  right side  */
+@media screen and (max-width:900px) {
+
+    .second-aside {
+        display: inline-block;
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        height: 66vh;
+        width: 350px;
+        background-color: black;
+
+        right: 0px;
+        top: 20%;
+        overflow: scroll;
+        padding-left: 10px;
+        transition: opacity ease-in-out 1s;
+    }
+}
+
+.one {
+    display: inline-block;
+    /* overflow: hidden; */
+}
+
+/* head */
+.second-aside {
+    width: 30%;
+    height: 86px;
+
+}
+
+.head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 12%;
+}
+
+.head h1 {
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    color: #9264e6;
+
+}
+
+.head h4 {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+
+.head h4 a {
+
+    color: rgb(80 220 255);
+
+}
+
+/* queopt */
+.queopt {
+    position: fixed;
+    right: 4%;
+    top: 14%;
+    background-color: #f8f9fa;
+    width: 10%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1%;
+    box-sizing: border-box;
+    overflow: hidden;
+    z-index: 2;
+    opacity: 0;
+    transform: scale(0);
+    transition: all ease-in-out 0.25s;
+}
+
+.queopt p {
+
+    text-align: center;
+
+}
+
+.queopt p a {
+    text-decoration: none;
+    color: #bb54a1;
+    font-weight: bolder;
+}
+
+/* plistcon */
+.plistcon {
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    cursor: pointer;
+
+}
+
+.plistcon::-webkit-scrollbar {
+    display: none;
+}
+
+.pitem {
+    width: 90%;
+    height: auto;
+    padding: 0px 1%;
+    box-sizing: border-box;
+    margin: 1%;
+}
+
+.pitem:hover {
+    box-shadow: 0px 0px 2px 1px white;
+}
+
+.lcon {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cover {
+    width: 80px;
+    height: 80px;
+}
+
+.cover img {
+    width: 80px;
+    height: 80px;
+}
+
+.lcon>div:nth-chld(3) {
+    margin-left: 12px;
+    width: 50%;
+    word-wrap: break-word;
+}
+
+
+
+/* its to complecated for me and imp also 
+in this i used transform  color infinite animation afer hover */
+
+.rcon {
+    position: relative;
+    left: 90%;
+    bottom: 60%;
+    width: min-content;
+    height: 20px;
+    font-size: 20px;
+
+}
+
+.rcon i {
+    color: white;
+    /* Initial color */
+    transition: color 1s ease-in-out 0s;
+}
+
+
+
+@keyframes colorchange {
+    0% {
+        color: white;
+    }
+
+    30% {
+        color: red;
+    }
+    60%{
+        color:yellow
+    }
+
+    100% {
+        color: blue;
+    }
+}
+
+.pitem:hover i {
+    animation: colorchange 1s ease-in-out infinite;
+
+}
+
+
+
+/* footer */
+footer {
+    position: absolute;
+    bottom: 1px;
+    width: 100%;
+    background-color: rgb(14, 7, 29);
+    color: white;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 0px 3%;
+    box-sizing: border-box;
+    height: 70px;
+
+
+}
+
+.activesong {
+    height: 90%;
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.simg {
+    width: 50px;
+    height: 50px;
+    min-height: 50px;
+    min-width: 50px;
+}
+
+.simg img {
+    width: 50px;
+    height: 50px;
+}
+
+.sdisc {
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.sicon {
+    height: 100%;
+    padding-top: 4%;
+}
+
+.sgif {
+    width: 80px;
+    height: 50px;
+    padding-top: 2px;
+    padding-bottom: 1px;
+    padding-left: 10px;
+
+}
+
+.sgif img {
+    width: 80px;
+    height: 50px;
+}
+
+.player {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.player audio {
+    width: 100%;
+    height: 70%;
+    outline-color: initial;
+    outline-style: none;
+    outline-width: initial;
+}
+
+.ext {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
